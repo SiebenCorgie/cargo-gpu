@@ -115,6 +115,10 @@ pub struct BuildArgs {
     /// Preserve unused descriptor bindings. Useful for reflection.
     #[arg(long, default_value = "false")]
     pub preserve_bindings: bool,
+
+    ///Renames the manifest.json file to the given name
+    #[clap(long, short, default_value = "manifest.json")]
+    pub manifest_file: String,
 }
 
 impl BuildArgs {
